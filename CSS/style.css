@@ -1,0 +1,272 @@
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  color: #5c5c5c;
+
+
+}
+.header-block {
+  background: #fafafa;
+  text-align: center;
+  padding: 0 20px;
+
+}
+
+.name {
+  font-size: 2em;
+  background: #fafafa;
+  padding: 10px 0 10px 0;
+}
+
+.wrapper-header {
+padding: 20px 0;
+margin: 0 auto;
+text-align: center;
+}
+
+.profile {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+img {
+  max-width: 90%;
+
+}
+h1 {
+  font-family: "roboto-slab", sans-serif;
+}
+
+h2 {
+  padding: 20px 0 20px 0;
+
+}
+
+h3 {
+  font-size: 1.5em;
+
+}
+.wrapper-main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-text {
+  padding: 0 10px 0px 10px;
+  font-size: 1.35em;
+
+}
+.main-text {
+  padding: 20px 35px 20px 35px;
+  font-size: 1.35em;
+
+}
+
+.skills {
+  background-color: rgb(228, 146, 114);
+  padding: 10px 0 30px 0;
+  margin: 0 10px 0 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  border: solid 10px red;
+  height: 100px;
+
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  
+
+}
+
+.web-dev {
+	float: left;
+	width: 50%;
+}
+
+.digital-marketing {
+	float: right;
+	width: 50%;
+}
+
+.contact {
+  font-size: 1.35em;
+  background: #fafafa;
+  padding: 50px 35px 50px 35px;
+  border: solid 20px red;
+
+}
+
+.wrapper-footer {
+padding: 0 20px 20px 20px;
+margin: 0 auto;
+text-align: center;
+
+}
+
+.footer-right {
+float: right;
+font-weight: bold;
+}
+
+.footer-left {
+ float: left;
+ font-weight: bold;
+}
+
+/* ---- Navigation ---- */
+
+ul {
+  list-style-type: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+nav ul {
+	list-style: none;
+	text-align: center;
+	margin: 0;
+  padding: 0 0 50px 0;
+  list-style: none;
+}
+
+nav li {
+	background: #fff;
+	margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 0 5px 0;
+  display: block;
+}
+
+nav li:hover {
+  background-color: rgb(228, 146, 114);
+
+}
+.name a,
+nav a {
+	padding: 10px 10px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.main-nav a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+}
+/* ================================================= 
+ Media Queries
+==================================================== */
+
+/* Target viewport sizes greater than 767px */
+
+@media screen and (min-width: 768px) {
+
+	nav li {
+		display: inline-block;
+		background-color: #fff;
+		padding: 10px 15px 10px 15px;
+		font-size: .7em;
+  }
+  
+	.profile {
+		float: right;
+		width: 50%;
+		padding-top: 0px;
+		padding-left: 30px;
+	}
+
+	.header-text {
+		float: left;
+		width: 50%;
+		text-align: left;
+	}
+
+	.portfolio p {
+		width: 74%;
+		margin: 0 auto;
+  }
+  
+  .marketing, .travel, .gallery  {
+		float: left;
+		width: 50%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.search, .map, .calculator {
+		float: right;
+		width: 50%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.contact {
+		padding-bottom: 50px;
+	}
+
+	.contact p {
+		font-size: 1em;
+		width: 60%;
+		margin: 0 auto;
+		padding-bottom: 10px;
+	}
+	.contact {
+		padding-bottom: 20px;
+	}
+
+	.contact h2 {
+		padding-bottom: 10px;
+	}
+	.top {
+		display: none;
+	}
+
+	.student-name {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+
+
+}
+
+/* Target viewport sizes 1023px and wider */
+
+@media screen and (min-width: 1024px) {
+	.marketing, .search, .travel, .map, .gallery, .calculator {
+		width: 33.33%;
+	}
+
+	.portfolio p {
+		width: 85%;
+		margin: 0 auto;
+	}
+}
+
+
+/* ---- Navigation ---- */
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
