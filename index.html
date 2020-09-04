@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto+Slab:wght@100;300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel=stylesheet>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="container">
       <header class="header-block clearfix" id="BACKTOTOP">
          <div class="wrapper-header">
             <h1 class="name">Student Name</h1>
-            <nav>
-              <ul class="main-nav">
+            <div class="header-wide">
+            <nav class="main-nav clearfix">
+              <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -22,6 +23,7 @@
               </ul>
             </nav>
             <img src="images/responsive-layout-profile.png" alt="profile picture" class="profile">
+          </div>
               <p class="header-text">Hi! I'm a front-end developer who loves responsive design and css. 
                 I recently finished a degree in front-end web development at treehouse 
                 and am excited to put my skills to use!</p>
@@ -113,12 +115,18 @@
         </div>
       
       
-     <footer class="clearfix">
-      <div class="wrapper-footer">
+     <footer class="wrapper-footer clearfix">
         <hr/>
-        <div class="footer-left">Student name</div>
+        <div class="footer-left">STUDENT NAME</div>
         <a class="footer-right" href="#BACKTOTOP"> BACK TO TOP </a>
-      </div>
+        <nav>
+          <ul class="footer-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
      </footer>
   </body>
 </html>
